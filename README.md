@@ -2,7 +2,7 @@
 
 Context Focus reduces visual clutter by keeping the content around your pointer clear while gently fading surrounding text.
 
-[![Context Focus demonstration](https://i.ibb.co/nqDG6xMp/Obsidian-OKrpqux-D2h.gif)](https://ibb.co/TDHfY9My)
+[![Context Focus demonstration](https://i.imgur.com/QgxHO0g.gif)](https://imgur.com/a/xZsIWO7)
 
 ## Features
 
@@ -21,7 +21,7 @@ Context Focus reduces visual clutter by keeping the content around your pointer 
 
 ### Community plugins
 
-Install **Context Focus** from Obsidian's Community plugins browser once it is available there.
+Install **Context Focus** from Obsidian's Community plugins browser.
 
 ### Manual installation
 
@@ -49,3 +49,11 @@ Use the eye button in the left ribbon to turn all focus effects on or off. You c
 - **Fade scope:** Fade connected content only or everything else in the note.
 - **Focus buffer:** Wait briefly before clearing focus when the pointer moves between items. The default is 150 milliseconds.
 - **Fade duration:** Control how quickly content fades.
+
+## Compatibility
+
+Context Focus is a desktop plugin because its interaction is based on pointer hover. It does not access the network or files outside your vault.
+
+## License
+
+[MIT](LICENSE)
