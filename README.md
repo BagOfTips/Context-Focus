@@ -2,7 +2,7 @@
 
 Context Focus reduces visual clutter by keeping the content around your pointer clear while gently fading surrounding text.
 
-[Example](https://i.imgur.com/QgxHO0g.gif)
+![Context Focus demonstration](Demos/ContextFocusDemo.gif)
 
 ## Features
 
