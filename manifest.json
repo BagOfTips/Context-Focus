@@ -1,0 +1,9 @@
+{
+  "id": "context-focus",
+  "name": "Context Focus",
+  "version": "1.0.0",
+  "minAppVersion": "1.13.4",
+  "description": "Focus hovered list branches or paragraphs while dimming nearby content.",
+  "author": "Bag of Tips",
+  "isDesktopOnly": true
+}

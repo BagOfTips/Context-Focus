@@ -1,0 +1,70 @@
+/*
+Context Focus dims branches rather than individual text fragments. This keeps
+the hovered bullet and every parent leading to it at full strength.
+*/
+.workspace-ribbon .side-dock-ribbon-action.context-focus-ribbon.is-active {
+  background-color: var(--background-modifier-hover);
+  color: var(--interactive-accent);
+}
+
+.markdown-preview-view .context-focus-list li,
+.markdown-source-view.mod-cm6 .context-focus-list li {
+  transition: opacity var(--context-focus-duration, 250ms) ease;
+}
+
+.markdown-preview-view .context-focus-list li:not(.context-focus-path),
+.markdown-source-view.mod-cm6 .context-focus-list li:not(.context-focus-path) {
+  opacity: 0.22;
+}
+
+.markdown-preview-view .context-focus-list li.context-focus-path,
+.markdown-source-view.mod-cm6 .context-focus-list li.context-focus-path {
+  opacity: 1;
+}
+
+.markdown-source-view.mod-cm6 .cm-line.context-focus-editor-item {
+  opacity: 0.22;
+  transition: opacity var(--context-focus-duration, 250ms) ease;
+}
+
+.markdown-source-view.mod-cm6 .cm-line.context-focus-editor-item.context-focus-path {
+  opacity: 1;
+}
+
+.markdown-preview-view .context-focus-paragraph,
+.markdown-source-view.mod-cm6 .cm-line.context-focus-paragraph {
+  opacity: 0.22;
+  transition: opacity var(--context-focus-duration, 250ms) ease;
+}
+
+.markdown-preview-view .context-focus-paragraph.context-focus-paragraph-active,
+.markdown-source-view.mod-cm6 .cm-line.context-focus-paragraph.context-focus-paragraph-active {
+  opacity: 1;
+}
+
+.markdown-preview-view .context-focus-page-item,
+.markdown-source-view.mod-cm6 .context-focus-page-item {
+  opacity: 0.22;
+  transition: opacity var(--context-focus-duration, 250ms) ease;
+}
+
+.markdown-preview-view .context-focus-page-item.context-focus-page-active,
+.markdown-source-view.mod-cm6 .context-focus-page-item.context-focus-page-active {
+  opacity: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .markdown-preview-view .context-focus-list li,
+  .markdown-source-view.mod-cm6 .context-focus-list li,
+  .markdown-preview-view .context-focus-paragraph,
+  .markdown-source-view.mod-cm6 .cm-line.context-focus-paragraph,
+  .markdown-preview-view .context-focus-page-item,
+  .markdown-source-view.mod-cm6 .context-focus-page-item {
+    transition: none;
+  }
+
+
+  .markdown-source-view.mod-cm6 .cm-line.context-focus-editor-item {
+    transition: none;
+  }
+}
